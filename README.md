@@ -1,1 +1,1 @@
-# location to publish html projects with their url ..anitapeppercorn.github.io
+# Completed work for Horiseon Marketing Project
