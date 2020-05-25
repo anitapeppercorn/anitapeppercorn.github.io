@@ -1,9 +1,10 @@
+/*refactored styles*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Overall styles*/
 body {
     background-color: #d9dcd6;
 }
@@ -19,11 +20,12 @@ body {
     display: inline-block;
     font-size: 48px;
 }
-
+/* We use this block to just color seo style words differently */
 .header h1 .seo {
     color: #d9dcd6;
 }
-/* We use this block to just color seo style words differently */
+
+/*nav styles*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -49,7 +51,7 @@ a {
 p {
     font-size: 16px;
 }
-
+/*hero styles*/
 .hero {
     height: 800px;
     width: 100%;
@@ -74,7 +76,7 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/*benefit overall styles*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -133,7 +135,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-
+/*benefit specific styles - can be consolidated to just one block to reduce lines*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -187,7 +189,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/*footer styles*/
 .footer {
     padding: 30px;
     clear: both;
