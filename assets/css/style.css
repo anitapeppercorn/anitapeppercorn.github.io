@@ -35,8 +35,8 @@ body {
 }
 
 .grid-item {
-  grid-column: span 3;
-  grid-row: span 5;
+  grid-column: span 4;
+  grid-row: span 3;
   justify-content: left;
   align-items: normal;
   border: 0.05vw solid rgba(10, 22, 109, 0.878);
@@ -48,14 +48,33 @@ body {
 .grid-item:hover {
   background-color: rgba(137, 112, 168, 0.878);
 }
+
 .item-1 {
-  grid-column: 1 / span 12;
-  grid-row: span 1;
-  background-color: rgba(121, 123, 138, 0.878);
+  grid-column: 1 / span 6;
+  grid-row: span 6;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.item-2 {
+  grid-column: span 6;
+  grid-row: span 6;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.item-3 {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: rgba(103, 143, 148, 0.534);
+}
+
+.item-4 {
+  grid-column: span 4;
+  grid-row: span 4;
+  background-color: rgba(103, 143, 148, 0.534);
 }
 
 .grid__img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
   object-fit: cover;
 }
