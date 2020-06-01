@@ -1,5 +1,8 @@
 # My Portfolio
 
+The URL of the deployed application: https://anitapeppercorn.github.io/
+The URL of the GitHub repository that contains code: https://github.com/anitapeppercorn/anitaprofileportfolio
+
 My portfolio is intended to showcase my work and my capabilities 
 Any potential employer may want to view my deployed portfolio. This is a way to view samples of my work.
 
@@ -10,5 +13,4 @@ When you click on the link to the section about my work, the UI scrolls to a sec
 When presented with my first application, that application's image will be larger in size than the others.
 When you click on the images of the applications; you will be taken to that deployed application.
 When you resize the page or view the site on various screens and devices, you will be presented with a responsive layout that adapts to my viewport
-The URL of the deployed application >> https://anitapeppercorn.github.io/.
-The URL of the GitHub repository that contains code>> https://github.com/anitapeppercorn/anitaprofileportfolio
+

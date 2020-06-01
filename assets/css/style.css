@@ -160,11 +160,82 @@ header nav ul li a {
   grid-row: span 3;
 }
 
+.grid-item-4-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/surf.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-4-image:hover {
+  background-image: url('../images/surf.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .item-5 {
   grid-column: span 3;
   grid-row: span 2;
 }
 
+.grid-item-5-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/ledwall.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-5-image:hover {
+  background-image: url('../images/ledwall.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-7-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pastelpuzzle.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-7-image:hover {
+  background-image: url('../images/pastelpuzzle.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-8-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/runbuddy.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-8-image:hover {
+  background-image: url('../images/runbuddy.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 footer {
   background: rgb(224, 221, 215);
   width: 100%;
@@ -181,4 +252,23 @@ footer h2 {
 footer p {
   color: rgb(36, 31, 22);
   margin: 2vw;
+}
+/* Additional Screen Sizes */
+/* Width at 480px and below */
+@media screen and (max-width: 480px) {
+  header {
+    background-color: rgb(193, 219, 233);
+    padding: 2vw 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 10vh);
+  grid-gap: 1vw;
+  grid-auto-flow: dense;
+  margin: 2vw;
+}
 }
