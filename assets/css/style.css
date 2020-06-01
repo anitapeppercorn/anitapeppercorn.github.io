@@ -1,80 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html {
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
-  font-family: 'arial', helvetica, sans-serif;
+  font-family: "arial", helvetica, sans-serif;
   font-weight: normal;
   font-size: 1vw;
   color: black;
-  text-shadow: 0 2vw 0 rgba(218, 177, 177, 0.07);
+  text-shadow: 0 1vw 0 rgba(218, 177, 177, 0.07);
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+/* Header style */
+header {
+  background-color: rgb(224, 221, 215);
+  padding: 2vw 0;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 2vw;
+  font-style: italic;
+  margin: 1vw;
 }
 
-body {
+header a {
+  text-decoration: none;
+  color: rgb(124, 107, 76);
+}
+header a:hover {
+  color: rgb(36, 31, 22);
+}
+
+header nav {
+  float: right;
+  margin: 1vw 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  margin: 0 2vw;
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+.container {
+  background-color: rgb(210, 170, 102);
   margin: 4vw;
 }
-.container {
-  background-color: rgb(220, 241, 225)
-}
+
 .container:hover {
-  background-color: rgb(209, 199, 154);
+  background-color: rgb(249, 223, 179);
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 5vw);
+  grid-template-rows: repeat(8, 14vh);
   grid-gap: 1vw;
   grid-auto-flow: dense;
+  margin: 2vw;
 }
-.grid-container:hover {
-  background-color: black;
+
+.grid-container a {
+  position: relative;
+  color: white;
 }
 
 .grid-item {
-  grid-column: span 4;
-  grid-row: span 3;
-  justify-content: left;
+  grid-column: span 3;
+  grid-row: span 1;
+  justify-content: normal;
   align-items: normal;
-  border: 0.05vw solid rgba(10, 22, 109, 0.878);
+  border: 0.05vw solid rgba(103, 143, 148, 0.534);
   border-radius: 1vw;
   font-size: 1vw;
-  background-color: rgba(187, 192, 235, 0.878);
+  background-color: rgba(103, 143, 148, 0.534);
+  display: inline-block;
 }
 
 .grid-item:hover {
-  background-color: rgba(137, 112, 168, 0.878);
+  background-color: rgba(161, 184, 187, 0.534);
+}
+
+.grid-item a {
+  position: relative;
+  color: rgb(36, 31, 22);
+}
+
+.grid-item-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/search-engine-optimization.jpg');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-image:hover {
+  background-image: url('../images/search-engine-optimization.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.grid-item-text {
+  text-align: right;
+  position: absolute;
+  top: 55%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  color: rgb(36, 31, 22);
+}
+
+.grid-item-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 1vw;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-item-text button:hover {
+  background-color: #555;
+  color: white;
 }
 
 .item-1 {
-  grid-column: 1 / span 6;
-  grid-row: span 6;
-  background-color: rgba(103, 143, 148, 0.534);
+  grid-column: 1 / span 12;
+  grid-row: span 2;
 }
 
 .item-2 {
-  grid-column: span 6;
-  grid-row: span 6;
-  background-color: rgba(103, 143, 148, 0.534);
+  grid-column: span 12;
+  grid-row: span 2;
+  margin: 0vw;
+  padding: 1vw;
 }
 
 .item-3 {
-  grid-column: span 4;
-  grid-row: span 4;
-  background-color: rgba(103, 143, 148, 0.534);
+  grid-column: span 3;
+  grid-row: span 8;
+  margin: 0vw;
+  padding: 1vw;
 }
 
 .item-4 {
-  grid-column: span 4;
-  grid-row: span 4;
-  background-color: rgba(103, 143, 148, 0.534);
+  grid-column: span 6;
+  grid-row: span 3;
 }
 
-.grid__img {
-  width: 90%;
-  height: 70%;
-  object-fit: cover;
+.item-5 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+footer {
+  background: rgb(224, 221, 215);
+  width: 100%;
+
+  display: inline-block;
+}
+
+footer h2 {
+  color: rgb(36, 31, 22);
+  font-size: 2vw;
+  margin: 2vw;
+}
+
+footer p {
+  color: rgb(36, 31, 22);
+  margin: 2vw;
 }
